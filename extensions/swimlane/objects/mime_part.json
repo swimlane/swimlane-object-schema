@@ -1,0 +1,20 @@
+{
+  "caption": "MIME Part",
+  "name": "mime_part",
+  "description": "MIME Part of an email message",
+  "extends": "object",
+  "attributes": {
+    "content": {
+      "description": "Contents of the MIME part",
+      "requirement": "required"
+    },
+    "content_type": {
+      "description": "Value of the Content-Type header field of the MIME part",
+      "requirement": "optional"
+    },
+    "content_disposition": {
+      "description": "Value of the Content-Disposition header field of the MIME part",
+      "requirement": "optional"
+    }
+  }
+}

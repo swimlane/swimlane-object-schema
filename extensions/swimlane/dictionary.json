@@ -1,0 +1,43 @@
+{
+  "caption": "Attribute Dictionary",
+  "description": "The Attribute Dictionary defines schema attributes and includes references to the events and objects in which they are used.",
+  "name": "dictionary",
+  "attributes": {
+    "content_type": {
+      "caption": "HTTP or SMTP Content Type",
+      "description": "The request header that identifies the original <a target='_blank' href='https://www.iana.org/assignments/media-types/media-types.xhtml'>media type </a> of the resource (prior to any content encoding applied for sending).",
+      "type": "string_t"
+    },
+    "smtp_headers": {
+      "caption": "SMTP Headers",
+      "description": "SMTP headers in an email",
+      "type": "smtp_header",
+      "is_array": true
+    },
+    "mime_parts": {
+      "caption": "MIME parts",
+      "description": "MIME parts of an email",
+      "type": "mime_part",
+      "is_array": true
+    },
+    "content": {
+      "caption": "The content of the message",
+      "description": "The content of the MIME part, HTTP request, or HTTP response",
+      "type": "file_t"
+    },
+    "content_disposition": {
+      "caption": "Content Disposision",
+      "description": "The value of the Content-Disposition header of the MIME part"
+    }
+  },
+  "types": {
+    "caption": "Swimlane Data Types",
+    "description": "Swimlane-specific data types. The data type specifies what kind of data a value can have.",
+    "attributes": {
+      "turbine_file_t": {
+        "caption": "Turbine File",
+        "description": "Turbine file encoded as an object with a file_name and file UUID attribute"
+      }
+    }
+  }
+}
