@@ -1,0 +1,10 @@
+{
+  "caption": "Email Trait",
+  "description": "Email trait defines attributes shared by endpoint and network email events.",
+  "attributes": {
+    "email_uid": {
+      "requirement": "recommended",
+      "group": "primary"
+    }
+  }
+}

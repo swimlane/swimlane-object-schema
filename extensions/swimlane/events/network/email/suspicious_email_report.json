@@ -1,0 +1,17 @@
+{
+  "description": "Email Delivery events report the delivery status of emails.",
+  "extends": "email_activity",
+  "caption": "Suspicious Email Report",
+  "name": "suspicious_email_report",
+  "uid": 0,
+  "attributes": {
+    "$include": "includes/suspicious_email_report.json",
+    "activity_id": {
+      "enum": {
+        "1": {
+          "caption": "Reported"
+        }
+      }
+    }
+  }
+}
