@@ -3,6 +3,11 @@
   "description": "The Attribute Dictionary defines schema attributes and includes references to the events and objects in which they are used.",
   "name": "dictionary",
   "attributes": {
+    "connection_info": {
+      "caption": "Connection Info",
+      "description": "The network connection information.",
+      "type": "network_connection_info"
+    },
     "content_type": {
       "caption": "HTTP or SMTP Content Type",
       "description": "The request header that identifies the original <a target='_blank' href='https://www.iana.org/assignments/media-types/media-types.xhtml'>media type </a> of the resource (prior to any content encoding applied for sending).",
@@ -23,11 +28,12 @@
     "content": {
       "caption": "The content of the message",
       "description": "The content of the MIME part, HTTP request, or HTTP response",
-      "type": "file_t"
+      "type": "turbine_file_t"
     },
     "content_disposition": {
       "caption": "Content Disposision",
-      "description": "The value of the Content-Disposition header of the MIME part"
+      "description": "The value of the Content-Disposition header of the MIME part",
+      "type": "string_t"
     },
     "dkim": {
       "caption": "DKIM Status",
@@ -53,6 +59,27 @@
       "caption": "DMARC Policy",
       "description": "The Domain-based Message Authentication, Reporting and Conformance (DMARC) policy status.",
       "type": "string_t"
+    },
+    "ip_information": {
+      "caption": "IP Protocol Information",
+      "description": "Additional attributes specific to the IP protocol",
+      "type": "ip_information"
+    },
+    "network_protocols": {
+      "caption": "Network Protocols",
+      "description": "Specifies the protocols observed in the network traffic, along with their corresponding state. </p>Protocols MUST be listed in low to high order, from outer to inner in terms of packet encapsulation. That is, the protocols in the outer level of the packet, such as IP, MUST be listed first. </p>The protocol names SHOULD come from the service names defined in the Service Name column of the IANA Service Name and Port Number Registry [Port Numbers]. In cases where there is variance in the name of a network protocol not included in the IANA Registry, content producers should exercise their best judgement, and it is recommended that lowercase names be used for consistency with the IANA registry.",
+      "is_array": true,
+      "type": "network_protocol"
+    },
+    "protocol_name": {
+      "caption": "Protocol Name",
+      "description": "The name of the Protocol in lowercase. </p>Examples: ip, tcp, tls, http",
+      "type": "string_t"
+    },
+    "protocol_number": {
+      "caption": "Protocol Number",
+      "description": "A number corresponding to the protocol",
+      "type": "integer_t"
     },
     "raw_header": {
       "caption": "Raw Header",
@@ -83,6 +110,33 @@
       "caption": "SPF Status",
       "description": "The Sender Policy Framework (SPF) status of the email.",
       "type": "string_t"
+    },
+    "tcp_information": {
+      "caption": "TCP Protocol Information",
+      "description": "Additional attributes specific to the TCP protocol",
+      "type": "tcp_information"
+    },
+    "ip_protocol_name": {
+      "caption": "Protocol Name",
+      "description": "The TCP/IP protocol name in lowercase, as defined by the Internet Assigned Numbers Authority (IANA). See <a target='_blank' href='https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml'>Protocol Numbers</a>. For example: <code>tcp</code> or <code>udp</code>.",
+      "type": "string_t"
+    },
+    "ip_protocol_num": {
+      "caption": "Protocol Number",
+      "description": "The TCP/IP protocol number, as defined by the Internet Assigned Numbers Authority (IANA). Use -1 if the protocol is not defined by IANA. See <a target='_blank' href='https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml'>Protocol Numbers</a>. For example: <code>6</code> for TCP and <code>17</code> for UDP.",
+      "type": "integer_t"
+    },
+    "ip_protocol_ver": {
+      "caption": "Protocol Version",
+      "description": "The Protocol version, as defined by the event source.",
+      "type": "string_t"
+    },
+    "ip_protocol_ver_id": {
+      "caption": "Protocol Version ID",
+      "description": "The normalized identifier of the Protocol version.",
+      "enum": {},
+      "sibling": "protocol_ver",
+      "type": "integer_t"
     },
     "email_auth": {
       "caption": "Email Authentication",

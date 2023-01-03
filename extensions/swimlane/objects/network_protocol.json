@@ -1,0 +1,21 @@
+{
+  "caption": "Network Protocol",
+  "name": "network_protocol",
+  "description": "The network protocols used in a Network Connection",
+  "extends": "object",
+  "attributes": {
+    "protocol_name": {
+      "requirement": "required"
+    },
+    "protocol_number": {
+      "requirement": "optional"
+    },
+    "tcp_information": {},
+    "tls": {
+      "group": "primary"
+    },
+    "ip_information": {}
+  }
+}
+
+  

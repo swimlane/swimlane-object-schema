@@ -1,0 +1,34 @@
+{
+  "caption": "IP Protocol Information",
+  "name": "ip_information",
+  "extends": "object",
+  "description": "Additional attributes specific to the IP protocol",
+  "attributes": {
+    "ip_protocol_name": {},
+    "ip_protocol_num": {
+      "requirement": "recommended"
+    },
+    "ip_protocol_ver": {
+      "description": "The Internet Protocol version.",
+      "caption": "IP Version"
+    },
+    "ip_protocol_ver_id": {
+      "description": "The Internet Protocol version identifier.",
+      "enum": {
+        "-1": {
+          "caption": "Other"
+        },
+        "0": {
+          "caption": "Unknown"
+        },
+        "4": {
+          "caption": "Internet Protocol version 4 (IPv4)"
+        },
+        "6": {
+          "caption": "Internet Protocol version 6 (IPv6)"
+        }
+      },
+      "caption": "IP Version ID"
+    }
+  }
+}
