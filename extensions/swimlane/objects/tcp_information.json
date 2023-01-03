@@ -1,0 +1,10 @@
+{
+  "caption": "TCP Protocol Information",
+  "name": "tcp_information",
+  "extends": "object",
+  "description": "Additional attributes specific to the TCP protocol",
+  "attributes": {
+    "tcp_flags": {},
+    "port": {}
+  }
+}
