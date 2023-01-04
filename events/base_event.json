@@ -42,15 +42,15 @@
     },
     "severity": {
       "group": "classification",
-      "requirement": "optional"
+      "requirement": "required"
     },
     "severity_id": {
       "group": "classification",
-      "requirement": "required"
+      "requirement": "optional"
     },
     "status": {
       "group": "primary",
-      "requirement": "optional"
+      "requirement": "required"
     },
     "status_code": {
       "group": "primary"
@@ -60,7 +60,7 @@
     },
     "status_id": {
       "group": "primary",
-      "requirement": "recommended"
+      "requirement": "optional"
     },
     "unmapped": {
       "group": "context"
