@@ -7,8 +7,8 @@
     "boundary": {},
     "boundary_id": {},
     "direction": {
-      "description": "The direction of the initiated connection.",
-      "requirement": "optional"
+      "description": "The direction of the initiated connection as defined by direction_id.",
+      "requirement": "required"
     },
     "direction_id": {
       "description": "The direction of the initiated connection.",
@@ -33,7 +33,7 @@
           "caption": "Lateral"
         }
       },
-      "requirement": "required"
+      "requirement": "optional"
     },
     "network_protocols": {},
     "uid": {
