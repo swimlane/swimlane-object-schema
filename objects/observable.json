@@ -6,7 +6,7 @@
   "attributes": {
     "name": {
       "description": "The name of the observable attribute. For example: <code>file.name</code>.",
-      "requirement": "required"
+      "requirement": "optional"
     },
     "type": {
       "description": "The observable value type name.",
