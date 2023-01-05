@@ -10,11 +10,11 @@
     },
     "type": {
       "description": "The observable value type name.",
-      "requirement": "optional"
+      "requirement": "required"
     },
     "type_id": {
       "description": "The observable value type identifier.",
-      "requirement": "required",
+      "requirement": "optional",
       "enum": {
         "0": {
           "caption": "Unknown",
