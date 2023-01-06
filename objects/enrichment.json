@@ -22,7 +22,7 @@
     },
     "value": {
       "description": "The value of the attribute to which the enriched data pertains.",
-      "requirement": "required"
+      "requirement": "optional"
     }
   }
 }
