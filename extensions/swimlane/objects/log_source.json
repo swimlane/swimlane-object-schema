@@ -1,0 +1,14 @@
+{
+  "caption": "Log Source",
+  "name": "log_source",
+  "extends": "object",
+  "description": "Information on the Log Sources generating a finding",
+  "attributes": {
+    "name": {
+      "requirement": "recommended"
+    },
+    "type": {
+      "requirement": "recommended"
+    }
+  }
+}
