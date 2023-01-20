@@ -1,0 +1,44 @@
+{
+  "caption": "Network Endpoint Group",
+  "name": "network_endpoint_group",
+  "profiles": ["reputation"],
+  "extends": "object",
+  "attributes": {
+    "$include": [
+      "profiles/reputation.json"
+    ],
+    "domain": {
+      "requirement": "optional"
+    },
+    "location": {
+      "description": "The geographical location of the endpoint.",
+      "requirement": "optional"
+    },
+    "name": {
+      "description": "The short name of the endpoint.",
+      "requirement": "recommended"
+    },
+    "subnet": {
+      "requirement": "recommended"
+    },
+    "vlan_uid": {
+      "requirement": "optional"
+    },
+    "vpc_uid": {
+      "requirement": "optional"
+    },
+    "members": {
+      "requirement": "optional"
+    }
+  },
+  "constraints": {
+    "at_least_one": [
+      "domain",
+      "location",
+      "name",
+      "subnet",
+      "vlan_uid",
+      "vpc_uid"
+    ]
+  }
+}

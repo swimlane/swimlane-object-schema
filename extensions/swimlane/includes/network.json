@@ -12,7 +12,12 @@
     },
     "dst_endpoint": {
       "description": "The responder (server) in a network connection.",
-      "requirement": "required",
+      "requirement": "recommended",
+      "group": "primary"
+    },
+    "dst_endpoint_group": {
+      "description": "The responders (server) in a network connection.",
+      "requirement": "recommended",
       "group": "primary"
     },
     "proxy": {
@@ -21,7 +26,12 @@
     },
     "src_endpoint": {
       "description": "The initiator (client) of the network connection.",
-      "requirement": "required",
+      "requirement": "recommended",
+      "group": "primary"
+    },
+    "src_endpoint_group": {
+      "description": "The initiators (client) of the network connection.",
+      "requirement": "recommended",
       "group": "primary"
     },
     "traffic": {

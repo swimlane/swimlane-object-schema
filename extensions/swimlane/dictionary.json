@@ -25,6 +25,12 @@
       "type": "mime_part",
       "is_array": true
     },
+    "members": {
+      "caption": "Members",
+      "description": "Members of the Group of Endpoints",
+      "type": "network_endpoint_group",
+      "is_array": true
+    },
     "content": {
       "caption": "The content of the message",
       "description": "The content of the MIME part, HTTP request, or HTTP response",
@@ -59,6 +65,16 @@
       "caption": "DMARC Policy",
       "description": "The Domain-based Message Authentication, Reporting and Conformance (DMARC) policy status.",
       "type": "string_t"
+    },
+    "dst_endpoint_group": {
+      "caption": "Destination Endpoint Group",
+      "description": "The network destination endpoints if there are multiple.",
+      "type": "network_endpoint_group"
+    },
+    "dst_endpoint": {
+      "caption": "Destination Endpoint",
+      "description": "The network destination endpoint.",
+      "type": "network_endpoint"
     },
     "ip_information": {
       "caption": "IP Protocol Information",
@@ -147,6 +163,16 @@
       "caption": "Email UID",
       "description": "The unique identifier of the email, used to correlate related email alert and activity events.",
       "type": "string_t"
+    },
+    "src_endpoint_group": {
+      "caption": "Source Endpoint Group",
+      "description": "The network source endpoint group if there are multiple.",
+      "type": "network_endpoint_group"
+    },
+    "src_endpoint": {
+      "caption": "Source Endpoint",
+      "description": "The network source endpoint.",
+      "type": "network_endpoint"
     }
   },
   "types": {
