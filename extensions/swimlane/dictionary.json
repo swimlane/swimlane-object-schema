@@ -123,6 +123,11 @@
       "description": "The IP address of the receiving email server, in either IPv4 or IPv6 format.",
       "type": "ip_t"
     },
+    "reporter": {
+      "caption": "Reporter of the suspicious activity",
+      "description": "Reporter of the suspicious activity",
+      "type": "user"
+    },
     "rules": {
       "caption": "Rule",
       "description": "The rules that reported the events.",
