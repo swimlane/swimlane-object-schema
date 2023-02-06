@@ -41,7 +41,7 @@
     "state": {
       "description": "The normalized state of a security finding.",
       "group": "context",
-      "requirement": "optional"
+      "requirement": "required"
     },
     "state_id": {
       "description": "The normalized state identifier of a security finding.",
@@ -64,7 +64,7 @@
         }
       },
       "group": "context",
-      "requirement": "required"
+      "requirement": "optional"
     },
     "vulnerabilities": {
       "group": "context",
