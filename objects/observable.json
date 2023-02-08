@@ -12,6 +12,10 @@
       "description": "The observable value type name.",
       "requirement": "required"
     },
+    "enrichments": {
+      "description": "A list of enrichments",
+      "requirement": "optional"
+    },
     "type_id": {
       "description": "The observable value type identifier.",
       "requirement": "optional",
