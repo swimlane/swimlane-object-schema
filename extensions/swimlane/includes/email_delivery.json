@@ -9,10 +9,6 @@
       "requirement": "optional",
       "group": "context"
     },
-    "dkim_signature": {
-      "requirement": "recommended",
-      "group": "context"
-    },
     "email": {
       "requirement": "required",
       "group": "primary"
