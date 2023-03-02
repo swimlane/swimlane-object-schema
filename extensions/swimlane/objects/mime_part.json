@@ -6,7 +6,11 @@
   "attributes": {
     "content": {
       "description": "Contents of the MIME part",
-      "requirement": "required"
+      "requirement": "recommended"
+    },
+    "content_text": {
+      "description": "Text Contents of the MIME part",
+      "requirement": "recommended"
     },
     "content_type": {
       "description": "Value of the Content-Type header field of the MIME part",
