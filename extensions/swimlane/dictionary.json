@@ -36,6 +36,11 @@
       "description": "The content of the MIME part, HTTP request, or HTTP response",
       "type": "turbine_file_t"
     },
+    "content_text": {
+      "caption": "Text contents of the part",
+      "description": "The text content of the MIME part, HTTP request, or HTTP response",
+      "type": "string_t"
+    },
     "content_disposition": {
       "caption": "Content Disposision",
       "description": "The value of the Content-Disposition header of the MIME part",
