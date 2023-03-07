@@ -1,0 +1,97 @@
+{
+  "description": "List of observables within an observable",
+  "caption": "Contains",
+  "name": "contains",
+  "attributes": {
+    "others": {
+      "description": "The observable data type is not mapped. See the type attribute, which may contain data source specific value.",
+      "requirement": "recommended"
+    },
+    "unknowns": {
+      "description": "Unknown observable data type.",
+      "requirement": "recommended"
+    },
+    "hostnames": {
+      "description": "Unique name assigned to a device connected to a computer network. A domain name in general is an Internet address that can be resolved through the Domain Name System (DNS). For example: r2-d2.example.com.",
+      "requirement": "recommended"
+    },
+    "ip_addresses": {
+      "description": "Internet Protocol address (IP address), in either IPv4 or IPv6 format.",
+      "requirement": "recommended"
+    },
+    "mac_addresses": {
+      "description": "Media Access Control (MAC) address. For example: 18:36:F3:98:4F:9A.",
+      "requirement": "recommended"
+    },
+    "usernames": {
+      "description": "User name. For example: john_doe.",
+      "requirement": "recommended"
+    },
+    "email_addresses": {
+      "description": "Email address. For example: john_doe@example.com.",
+      "requirement": "recommended"
+    },
+    "url_strings": {
+      "description": "Uniform Resource Locator (URL) string. For example: http://www.example.com/download/trouble.exe.",
+      "requirement": "recommended"
+    },
+    "file_names": {
+      "description": "File name. For example: text-file.txt.",
+      "requirement": "recommended"
+    },
+    "file_hashes": {
+      "description": "File hash. A unique value that corresponds to the content of the file.",
+      "requirement": "recommended"
+    },
+    "process_names": {
+      "description": "Process name. For example: Notepad.",
+      "requirement": "recommended"
+    },
+    "resource_uids": {
+      "description": "Resource unique identifier. For example, S3 Bucket name or EC2 Instance ID.",
+      "requirement": "recommended"
+    },
+    "endpoints": {
+      "description": "The endpoint object describes an addressable entity that has name and IP address.",
+      "requirement": "recommended"
+    },
+    "users": {
+      "description": "The user object describes the identity of a user.",
+      "requirement": "recommended"
+    },
+    "emails": {
+      "description": "The Email object describes the email metadata such as sender, recipients, and direction.",
+      "requirement": "recommended"
+    },
+    "url_objects": {
+      "description": "The Uniform Resource Locator (URL) object describes the path and reputation of a URL.",
+      "requirement": "recommended"
+    },
+    "files": {
+      "description": "The file object describes files, folders, links and mounts, including the reputation information, if applicable.",
+      "requirement": "recommended"
+    },
+    "processes": {
+      "description": "The process object describes a running instance of a launched program.",
+      "requirement": "recommended"
+    },
+    "geo_locations": {
+      "description": "The location object describes a geographical location, usually associated with an IP address.",
+      "requirement": "recommended"
+    },
+    "containers": {
+      "description": "The Container object describes a specific container, which is a source of events. A Docker container is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.",
+      "requirement": "recommended"
+    },
+    "registry_keys": {
+      "description": "The registry key object describes a Windows registry key.",
+      "requirement": "recommended"
+    },
+    "registry_values": {
+      "description": "The registry value object describes a Windows registry value.",
+      "requirement": "recommended"
+    }
+  },
+  "constraints": {
+  }
+}

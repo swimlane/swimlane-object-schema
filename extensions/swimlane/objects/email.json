@@ -78,6 +78,10 @@
     },
     "x_originating_ip": {
       "requirement": "optional"
+    },
+    "contains": {
+      "description": "Lists of observables contained within this observable",
+      "requirement": "optional"
     }
   }
 }

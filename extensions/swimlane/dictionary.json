@@ -31,6 +31,143 @@
       "type": "network_endpoint_group",
       "is_array": true
     },
+    "contains": {
+      "caption": "Observables Contained",
+      "description": "Observables contained within the observable",
+      "type": "contains"
+    },
+    "others": {
+      "is_array": true,
+      "caption": "Other Observables",
+      "description": "The observable data type is not mapped. See the type attribute, which may contain data source specific value.",
+      "type": "observable"
+    },
+    "unknowns": {
+      "is_array": true,
+      "caption": "Unknown Observables",
+      "description": "Unknown observable data type.",
+      "type": "observable"
+    },
+    "hostnames": {
+      "is_array": true,
+      "caption": "hostnames",
+      "description": "Unique name assigned to a device connected to a computer network. A domain name in general is an Internet address that can be resolved through the Domain Name System (DNS). For example: r2-d2.example.com.",
+      "type": "hostname_t"
+    },
+    "ip_addresses": {
+      "is_array": true,
+      "caption": "ip_addresses",
+      "description": "Internet Protocol address (IP address), in either IPv4 or IPv6 format.",
+      "type": "ip_t"
+    },
+    "mac_addresses": {
+      "is_array": true,
+      "caption": "mac_addresses",
+      "description": "Media Access Control (MAC) address. For example: 18:36:F3:98:4F:9A.",
+      "type": "mac_t"
+    },
+    "usernames": {
+      "is_array": true,
+      "caption": "usernames",
+      "description": "User name. For example: john_doe.",
+      "type": "username_t"
+    },
+    "email_addresses": {
+      "is_array": true,
+      "caption": "email_addresses",
+      "description": "Email address. For example: john_doe@example.com.",
+      "type": "email_t"
+    },
+    "url_strings": {
+      "is_array": true,
+      "caption": "url_strings",
+      "description": "Uniform Resource Locator (URL) string. For example: http://www.example.com/download/trouble.exe.",
+      "type": "url_t"
+    },
+    "file_names": {
+      "is_array": true,
+      "caption": "file_names",
+      "description": "File name. For example: text-file.txt.",
+      "type": "file_name_t"
+    },
+    "file_hashes": {
+      "is_array": true,
+      "caption": "file_hashes",
+      "description": "File hash. A unique value that corresponds to the content of the file.",
+      "type": "file_hash_t"
+    },
+    "process_names": {
+      "is_array": true,
+      "caption": "process_names",
+      "description": "Process name. For example: Notepad.",
+      "type": "process_name_t"
+    },
+    "resource_uids": {
+      "is_array": true,
+      "caption": "resource_uids",
+      "description": "Resource unique identifier. For example, S3 Bucket name or EC2 Instance ID.",
+      "type": "resource_uid_t"
+    },
+    "endpoints": {
+      "is_array": true,
+      "caption": "endpoints",
+      "description": "The endpoint object describes an addressable entity that has name and IP address.",
+      "type": "endpoint"
+    },
+    "users": {
+      "is_array": true,
+      "caption": "users",
+      "description": "The user object describes the identity of a user.",
+      "type": "user"
+    },
+    "emails": {
+      "is_array": true,
+      "caption": "emails",
+      "description": "The Email object describes the email metadata such as sender, recipients, and direction.",
+      "type": "swimlane/email"
+    },
+    "url_objects": {
+      "is_array": true,
+      "caption": "url_objects",
+      "description": "The Uniform Resource Locator (URL) object describes the path and reputation of a URL.",
+      "type": "url"
+    },
+    "files": {
+      "is_array": true,
+      "caption": "files",
+      "description": "The file object describes files, folders, links and mounts, including the reputation information, if applicable.",
+      "type": "swimlane/file"
+    },
+    "processes": {
+      "is_array": true,
+      "caption": "processes",
+      "description": "The process object describes a running instance of a launched program.",
+      "type": "process"
+    },
+    "geo_locations": {
+      "is_array": true,
+      "caption": "geo_locations",
+      "description": "The location object describes a geographical location, usually associated with an IP address.",
+      "type": "location"
+    },
+    "containers": {
+      "is_array": true,
+      "caption": "containers",
+      "description": "The Container object describes a specific container, which is a source of events. A Docker container is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.",
+      "type": "container"
+    },
+    "registry_keys": {
+      "is_array": true,
+      "caption": "registry_keys",
+      "description": "The registry key object describes a Windows registry key.",
+      "type": "registry_key"
+    },
+    "registry_values": {
+      "is_array": true,
+      "caption": "registry_values",
+      "description": "The registry value object describes a Windows registry value.",
+      "type": "registry_value"
+    },
     "content": {
       "caption": "The content of the message",
       "description": "The content of the MIME part, HTTP request, or HTTP response",
